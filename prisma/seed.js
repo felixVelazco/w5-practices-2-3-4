@@ -73,6 +73,41 @@ const prisma = new PrismaClient();
       },
     });
 
+    const student1 = await prisma.student.upsert({
+      where: { name: "student1"},
+      update: {},
+      create: {
+        name: "student1",
+        lang: ["javascript", "elixir"],
+        missionCommander: "Carlo",
+        enrollments: 1,
+        hasCertification: false
+      }
+    })
+    
+    const student2 = await prisma.student.upsert({
+      where: { name: "student2"},
+      update: {},
+      create: {
+        name: "student2",
+        lang: ["java", "c++"],
+        missionCommander: "fer",
+        enrollments: 2,
+        hasCertification: false
+      }
+    })
+    const student3 = await prisma.student.upsert({
+      where: { name: "student3"},
+      update: {},
+      create: {
+        name: "student3",
+        lang: ["javascript", "java"],
+        missionCommander: "Carlo",
+        enrollments: 1,
+        hasCertification: true
+      }
+    })
+
     console.log("Create 4 explorers");
   } catch(e){
     console.error(e);
