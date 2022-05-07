@@ -108,6 +108,41 @@ const prisma = new PrismaClient();
       }
     })
 
+    const missionCommander1 = await prisma.missionCommander.upsert({
+      where: { name: "missionCommander1"},
+      update: {},
+      create: {
+        name: "missionCommander1",
+        username: "mc1",
+        mainStack: "frontend",
+        currentEnrollment: false,
+        hasAzureCertification: false
+      }
+    })
+    
+    const missionCommander2 = await prisma.missionCommander.upsert({
+      where: { name: "missionCommander2"},
+      update: {},
+      create: {
+        name: "missionCommander2",
+        username: "mc2",
+        mainStack: "backend-node",
+        currentEnrollment: true,
+        hasAzureCertification: true
+      }
+    })
+    const missionCommander3 = await prisma.missionCommander.upsert({
+      where: { name: "missionCommander3"},
+      update: {},
+      create: {
+        name: "missionCommander3",
+        username: "mc3",
+        mainStack: "backend-java",
+        currentEnrollment: true,
+        hasAzureCertification: true
+      }
+    })
+
     console.log("Create 4 explorers");
   } catch(e){
     console.error(e);
