@@ -4,7 +4,7 @@ Repository that creates an API with Express dependencies that connects to a data
 
 ## Prerrequisites
 - [Node](https://nodejs.org/es/download/)
-- [Npm](https://www.npmjs.com/)(It comes with the Node installation)
+- [Npm](https://www.npmjs.com/) (It comes with the Node installation)
 - [Git](https://git-scm.com/downloads)
 - [PostgreSQL](https://www.postgresql.org/download/)
 - [Postman](https://www.postman.com/), [curl](https://curl.se/download.html) or any tool that helps you to send requests to an API via endpoints (Optional)
@@ -17,7 +17,7 @@ Repository that creates an API with Express dependencies that connects to a data
 ## Installation 
 Clone this repository
 ```console
-> git clone 
+> git clone https://github.com/felixVelazco/w5-practices-2-3-4.git
 ```
 
 Open a terminal in the root folder and install dependencies
@@ -31,10 +31,10 @@ Create in your root folder, a file called .env and paste the following code (NOT
 DATABASE_URL="postgresql://USERNAME:PASSWORD@localhost:5432/DB_NAME?schema=public"
 ```
 
----
+
 **Rememeber:** 
 this is your personal info, never share this to anyone and don't forget always to put `.env` file in `.gitignore`, so you won't share in your remote repository.
-
+---
 ---
 
 Create a database with postgreSQL, you can create it by PgAdmin (an user interface) or by terminal with:
@@ -65,7 +65,7 @@ To add some users in your tables, you can modify `prisma/seed.js` file until you
 
 You can check all these changes were applied to your tables, now your DB is ready to be use. 
 
-## Usage
+
 
 
 ## Enpoints Explorer
@@ -97,3 +97,66 @@ Body raw(json)
 }
 ```
 
+## Endpoints Student
+
+## Endpoints MissionCommander
+
+| HTTP Method | Endpoint  | Description  | 
+|-----|---|---|
+| <span style="display: block; background-color:#61AFFE; color: white; width: 70px; text-align: center">**GET**</span>    | /missionCommanders  | Show all the mission commanders data in the database  |
+| <span style="display: block; background-color:#61AFFE; color: white; width: 70px; text-align: center">**GET**</span>    | /missionCommanders/:id  | Show mission commander by **id**  |
+| <span style="display: block; background-color:#49CC90; color: white; width: 70px; text-align: center">**POST**</span>    | /missionCommanders  | Creates a new mission commander  |
+| <span style="display: block; background-color:#FCA130; color: white; width: 70px; text-align: center">**PUT**</span>    | /missionCommanders/:id  |  Update main stack by **id** |
+| <span style="display: block; background-color:#F93E3E; color: white; width: 70px; text-align: center">**DELETE**</span>    | /missionCommanders/:id  | Delete mission commander by **id**  |
+
+### POST Creates a new explorer
+Body raw(json)
+```json
+{
+    "name":"missionCommander4", 
+    "username":"mc4", 
+    "mainStack": "frontend",
+    "currentEnrollment": true,
+    "hasAzureCertification": false
+}
+```
+
+### PUT Update info by id
+
+Body raw(json)
+```json
+{
+  "mainStack":"backend-node"
+}
+```
+
+## Usage
+
+First, you should run your database server project, you can do this with the following command:
+
+```console
+> npm run server
+```
+
+After running your DB server, in your client project, run a server too:
+
+```console
+> npm run serve
+```
+
+Open your web browser and enter to `http://localhost:8080/`. You will see something like this: 
+![Localhost page](assets/img/page1.JPG)
+
+You can click in any of the explorers name, and you will get some data.
+
+![Edit menu](assets/img/page2.JPG)
+
+When you press the `Editar` button, you will access to a new route, where you can edit the mission, or delete that register.
+
+![Edit page](assets/img/page3.JPG)
+
+Also you can add a new explorer, you just need to go navigation menu, and put `Agregar Explorer`.
+
+![Edit page](assets/img/page4.JPG)
+
+In the navigation bar, you can also find `mission commanders` and `Agregar Mission Commander`, there are basically the same as the previously explained.
