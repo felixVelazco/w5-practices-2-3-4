@@ -143,7 +143,7 @@ After running your DB server, in your client project, run a server too:
 ```
 
 Open your web browser and enter to `http://localhost:8080/`. You will see something like this: 
-![Localhost page](assets/img/page1.JPG)
+![Localhost page](assets/img/page1-1.JPG)
 
 You can click in any of the explorers name, and you will get some data.
 
