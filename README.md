@@ -65,7 +65,8 @@ To add some users in your tables, you can modify `prisma/seed.js` file until you
 
 You can check all these changes were applied to your tables, now your DB is ready to be use. 
 
-For *Usage* section, we are going to use this [project](https://github.com/felixVelazco/client-launchx.git) and have an UI. Just clone this repository to use it as well.
+For *Usage* section, we are going to use this [project](https://github.com/felixVelazco/client-launchx.git) to have an UI. Just clone this repository to use it as well.
+---
 
 ## Enpoints Explorer
 | HTTP Method | Endpoint  | Description  | 
