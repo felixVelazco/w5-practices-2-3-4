@@ -157,4 +157,14 @@ Also you can add a new explorer, you just need to go navigation menu, and put `A
 
 ![Edit page](assets/img/page4.JPG)
 
-In the navigation bar, you can also find `mission commanders` and `Agregar Mission Commander`, there are basically the same as the previously explained.
+In the navigation bar, you can also find `mission commanders` page: 
+
+![Edit page](assets/img/page5.JPG)
+
+You can also edit `Main Stack` input. Also you can delete that register if you need to:
+
+![Edit page](assets/img/page6.JPG)
+
+Also, you can add a new Mission Commander:
+
+![Edit page](assets/img/page7.JPG)
