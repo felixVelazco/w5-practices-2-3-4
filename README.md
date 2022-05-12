@@ -3,10 +3,10 @@
 Repository that creates an API with Express dependencies that connects to a database with PostgreSQL (to help with this, we are goint to use prisma dependency).
 
 ## Prerrequisites
-- [Node](https://nodejs.org/es/download/)
-- [Npm](https://www.npmjs.com/) (It comes with the Node installation)
-- [Git](https://git-scm.com/downloads)
-- [PostgreSQL](https://www.postgresql.org/download/)
+- [Node](https://nodejs.org/es/download/) v16.14.0
+- [Npm](https://www.npmjs.com/) v8.3.1 (It comes with the Node installation)
+- [Git](https://git-scm.com/downloads) v2.35.1.windows.2
+- [PostgreSQL](https://www.postgresql.org/download/) v14.2
 - [Postman](https://www.postman.com/), [curl](https://curl.se/download.html) or any tool that helps you to send requests to an API via endpoints (Optional)
 
 ## Dependencies
