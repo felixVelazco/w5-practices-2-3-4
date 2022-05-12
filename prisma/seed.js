@@ -14,62 +14,62 @@ const prisma = new PrismaClient();
     });
 
     const woopa1 = await prisma.explorer.upsert({
-      where: { name: 'Woopa1' },
+      where: { name: "Woopa1" },
       update: {},
       create: {
-        name: 'Woopa1',
-				username: 'ajolonauta1',
-				mission: 'Node'
+        name: "Woopa1",
+        username: "ajolonauta1",
+        mission: "Node"
       },
     });
 
     const woopa2 = await prisma.explorer.upsert({
-      where: { name: 'Woopa 2' },
+      where: { name: "Woopa 2" },
       update: {},
       create: {
-        name: 'Woopa 2',
-				username: 'ajolonauta2',
-				mission: 'Java'
+        name: "Woopa 2",
+        username: "ajolonauta2",
+        mission: "Java"
       },
     });
 
     const woopa3 = await prisma.explorer.upsert({
-      where: { name: 'Woopa 3' },
+      where: { name: "Woopa 3" },
       update: {},
       create: {
-        name: 'Woopa 3',
-				username: 'ajolonauta3',
-				mission: 'Node'
+        name: "Woopa 3",
+        username: "ajolonauta3",
+        mission: "Node"
       },
     });
 
     const woopa4 = await prisma.explorer.upsert({
-      where: { name: 'Woopa4' },
+      where: { name: "Woopa4" },
       update: {},
       create: {
-        name: 'Woopa4',
-				username: 'ajolonauta4',
-				mission: 'Node'
+        name: "Woopa4",
+        username: "ajolonauta4",
+        mission: "Node"
       },
     });
 
     const woopa5 = await prisma.explorer.upsert({
-      where: { name: 'Woopa 5' },
+      where: { name: "Woopa 5" },
       update: {},
       create: {
-        name: 'Woopa 5',
-				username: 'ajolonauta5',
-				mission: 'Java'
+        name: "Woopa 5",
+        username: "ajolonauta5",
+        mission: "Java"
       },
     });
 
     const woopa6 = await prisma.explorer.upsert({
-      where: { name: 'Woopa 6' },
+      where: { name: "Woopa 6" },
       update: {},
       create: {
-        name: 'Woopa 6',
-				username: 'ajolonauta6',
-				mission: 'Java'
+        name: "Woopa 6",
+        username: "ajolonauta6",
+        mission: "Java"
       },
     });
 
@@ -83,7 +83,7 @@ const prisma = new PrismaClient();
         enrollments: 1,
         hasCertification: false
       }
-    })
+    });
     
     const student2 = await prisma.student.upsert({
       where: { name: "student2"},
@@ -95,7 +95,7 @@ const prisma = new PrismaClient();
         enrollments: 2,
         hasCertification: false
       }
-    })
+    });
     const student3 = await prisma.student.upsert({
       where: { name: "student3"},
       update: {},
@@ -106,7 +106,7 @@ const prisma = new PrismaClient();
         enrollments: 1,
         hasCertification: true
       }
-    })
+    });
 
     const missionCommander1 = await prisma.missionCommander.upsert({
       where: { name: "missionCommander1"},
@@ -118,7 +118,7 @@ const prisma = new PrismaClient();
         currentEnrollment: false,
         hasAzureCertification: false
       }
-    })
+    });
     
     const missionCommander2 = await prisma.missionCommander.upsert({
       where: { name: "missionCommander2"},
@@ -130,7 +130,7 @@ const prisma = new PrismaClient();
         currentEnrollment: true,
         hasAzureCertification: true
       }
-    })
+    });
     const missionCommander3 = await prisma.missionCommander.upsert({
       where: { name: "missionCommander3"},
       update: {},
@@ -141,7 +141,7 @@ const prisma = new PrismaClient();
         currentEnrollment: true,
         hasAzureCertification: true
       }
-    })
+    });
 
     console.log("Create 4 explorers");
   } catch(e){
